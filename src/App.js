@@ -21,7 +21,10 @@ function App() {
       <div className="App">
 
         {/* Checking if data is being passed to button components */}
-        <Numbers />
+        {/* Will need to separate the number and specials div layers from the operators to get a partial effect */}
+        <div className='numbers-specials'>
+          <Numbers />
+        </div>
         <Operators />
         
 

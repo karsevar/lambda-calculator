@@ -4,20 +4,57 @@
 	background: red;
 }
 
+.App {
+	display: flex;
+
+	/* just some ideas on styling for different screen sizes */
+	/*
+	align-items: space-around;
+	justify-content: space-around;
+	*/
+}
+
+.numbers-specials {
+	width: 40%;
+}
+
 .number-container {
-	width: 50%;	
+	width: 100%;	
 
 	margin: 10px;
 }
 
 .numeric-button {
-	height: 70px;
-	width: 100px;
+	height: 90px;
+	width: 90px;
 	margin: 5px;
 
 	background-color: darkblue;
 	color: white;
-	font-size: 25px;
+	font-size: 30px;
 
 	border-radius: 50%;
 }
+
+.operator-container {
+	width: 100px;
+}
+
+.operator-button {
+	height: 90px;
+	width: 90px;
+	margin: 5px;
+
+	background-color: lightblue;
+	color: white;
+	font-size: 30px;
+
+	border-radius: 50%;
+}
+
+/*
+// might need to change the id names into dataset name attributes.
+#0 {
+	width: 120px;
+}
+*/
