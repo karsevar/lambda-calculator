@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./App.css";
 import Numbers from './components/ButtonComponents/NumberButtons/Numbers'
 import Operators from './components/ButtonComponents/OperatorButtons/Operators'
@@ -17,12 +17,15 @@ function App() {
   // the "5" button, or the operator if they click one of those buttons) and then call your setter function to update state.
   // Don't forget to pass the functions (and any additional data needed) to the components as props
 
-  
+  const [numeric, setNumeric] = useState('');
+
+  const numericString = () => setNumeric(numeric)
+
 
   return (
     <div className="container">
       <Logo />
-      <Display />
+      <Display numeric={numeric}/>
 
       <div className="App">
 
@@ -30,7 +33,10 @@ function App() {
         {/* Will need to separate the number and specials div layers from the operators to get a partial effect */}
         <div className='numbers-specials'>
           <Specials />
-          <Numbers />
+          <Numbers 
+            numeric={numeric} 
+            setNumeric={setNumeric} 
+            numericString={numericString} />
         </div>
         <Operators />
         

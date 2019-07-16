@@ -1,9 +1,9 @@
 import React from "react";
 
-const Display = () => {
+const Display = ({numeric}) => {
   return (
     <div className='display'>
-      <h2>{800}</h2>
+      <h2>{numeric}</h2>
     </div>
   );
 };
