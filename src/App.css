@@ -1,5 +1,5 @@
 .container {
-	max-width: 800px;
+	max-width: 450px;
 	margin: 0 auto;
 	background: red;
 }
@@ -15,7 +15,7 @@
 }
 
 .numbers-specials {
-	width: 40%;
+	width: 90%;
 }
 
 .number-container {
@@ -38,9 +38,28 @@
 
 .operator-container {
 	width: 100px;
+	margin: 10px;
 }
 
 .operator-button {
+	height: 90px;
+	width: 90px;
+	margin: 5px;
+
+	background-color: lightblue;
+	color: white;
+	font-size: 30px;
+
+	border-radius: 50%;
+}
+
+.special-container {
+	width: 100%;
+
+	margin: 10px;
+}
+
+.special-button {
 	height: 90px;
 	width: 90px;
 	margin: 5px;
