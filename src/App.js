@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Numbers from './components/ButtonComponents/NumberButtons/Numbers'
 import Operators from './components/ButtonComponents/OperatorButtons/Operators'
+import Specials from './components/ButtonComponents/SpecialButtons/Specials'
 // STEP 4 - import the button and display components
 // Don't forget to import any extra css/scss files you build into the correct component
 
@@ -23,6 +24,7 @@ function App() {
         {/* Checking if data is being passed to button components */}
         {/* Will need to separate the number and specials div layers from the operators to get a partial effect */}
         <div className='numbers-specials'>
+          <Specials />
           <Numbers />
         </div>
         <Operators />
