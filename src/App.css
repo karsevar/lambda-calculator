@@ -1,7 +1,9 @@
 .container {
 	max-width: 450px;
 	margin: 0 auto;
-	background: red;
+	background: darkred;
+	padding: 30px;
+	border-radius: 6px;
 }
 
 .App {
@@ -15,13 +17,13 @@
 }
 
 .numbers-specials {
-	width: 90%;
+	width: 86%;
 }
 
 .number-container {
 	width: 100%;	
 
-	margin: 10px;
+	margin: 10px 5px 10px 10px;
 }
 
 .numeric-button {
@@ -38,7 +40,7 @@
 
 .operator-container {
 	width: 100px;
-	margin: 10px;
+	margin: 10px 10px 10px 0;
 }
 
 .operator-button {
@@ -69,6 +71,25 @@
 	font-size: 30px;
 
 	border-radius: 50%;
+}
+
+.display {
+	width: 90%;
+	height: 100px;
+	background-color: grey;
+	border-radius: 40px;
+	margin-left: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.display h2 {
+	font-size: 40px;
+	margin-right: 20px;
 }
 
 /*
