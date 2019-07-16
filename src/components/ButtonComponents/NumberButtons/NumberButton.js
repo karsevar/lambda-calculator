@@ -1,7 +1,8 @@
 import React from "react";
 
 const NumberButton = ({number}) => {
-  console.log(number);
+  // small check to see if number is sent through props.
+  // console.log(number);
   return (
     <button className='numeric-button' id={number}>
       {/* Display a button element rendering the data being passed down from the parent container on props */}

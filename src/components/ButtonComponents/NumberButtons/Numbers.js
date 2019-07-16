@@ -7,6 +7,7 @@ import { numbers } from '../../../data';
 //Import your array data to from the provided data file
 
 const Numbers = () => {
+  // Small check to see if numbers is imported into Numbers.js
   console.log(numbers);
   // STEP 2 - add the imported data to state
   return (
