@@ -24,7 +24,40 @@ function App() {
   // mathematic operations state (returns an operator string).
   const [operation, setOperation] = useState();
 
-  // mathematic operations 
+  // Will need to create an object state that can contain two numeric values and an operations value.
+  const [calculations, setCalculations] = useState([]);
+
+  console.log(calculations);
+
+  // mathematic operations: I'm not really sure if this function will work with the logic 
+  // of the application structor.
+  function mathematics( numericOne, operation, numericTwo) {
+    let total = 0
+    switch(operation) {
+      case '/': 
+        total = numericOne/numericTwo; 
+        break;
+      
+      case "x":
+        total = numericOne/numericTwo;
+        break;
+      
+      case "-":
+        total = numericOne - numericTwo;
+        break;
+      
+      case "+":
+        total = numericOne + numericTwo;
+        break;
+
+      case "=":
+        console.log(total);
+        break;
+    }
+
+    return total;
+      
+  }
 
   return (
     <div className="container">
@@ -49,6 +82,10 @@ function App() {
         <Operators 
           operation={operation}
           setOperation={setOperation}
+          calculations={calculations}
+          setCalculations={setCalculations}
+          numeric={numeric} 
+          setNumeric={setNumeric}
         />
         
 

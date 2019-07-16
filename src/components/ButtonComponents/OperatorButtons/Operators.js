@@ -7,7 +7,7 @@ import { operators } from '../../../data';
 
 //Import your array data to from the provided data file
 
-const Operators = ({operation, setOperation}) => {
+const Operators = ({operation, setOperation, calculations, setCalculations, numeric, setNumeric}) => {
   // STEP 2 - add the imported data to state
 
   // Checking if operators is imported from data.js
@@ -22,6 +22,10 @@ const Operators = ({operation, setOperation}) => {
                                   value={operator.value}
                                   operation={operation}
                                   setOperation={setOperation} 
+                                  calculations={calculations}
+                                  setCalculations={setCalculations}
+                                  numeric={numeric} 
+                                  setNumeric={setNumeric}
                                   /> )}
     </div>
   );
