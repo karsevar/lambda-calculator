@@ -1,0 +1,98 @@
+.container {
+	max-width: 450px;
+	margin: 0 auto;
+	background: darkred;
+	padding: 30px;
+	border-radius: 6px;
+}
+
+.App {
+	display: flex;
+
+	/* just some ideas on styling for different screen sizes */
+	/*
+	align-items: space-around;
+	justify-content: space-around;
+	*/
+}
+
+.numbers-specials {
+	width: 86%;
+}
+
+.number-container {
+	width: 100%;	
+
+	margin: 10px 5px 10px 10px;
+}
+
+.numeric-button {
+	height: 90px;
+	width: 90px;
+	margin: 5px;
+
+	background-color: darkblue;
+	color: white;
+	font-size: 30px;
+
+	border-radius: 50%;
+}
+
+.operator-container {
+	width: 100px;
+	margin: 12px 10px 10px 0;
+}
+
+.operator-button {
+	height: 90px;
+	width: 90px;
+	margin: 5px;
+
+	background-color: lightblue;
+	color: white;
+	font-size: 30px;
+
+	border-radius: 50%;
+}
+
+.special-container {
+	width: 100%;
+
+	margin: 10px;
+}
+
+.special-button {
+	height: 90px;
+	width: 90px;
+	margin: 5px;
+
+	background-color: lightblue;
+	color: white;
+	font-size: 30px;
+
+	border-radius: 50%;
+}
+
+.display {
+	width: 90%;
+	height: 100px;
+	background-color: grey;
+	border-radius: 40px;
+	margin-left: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.display h2 {
+	font-size: 40px;
+	margin-right: 20px;
+}
+
+.numeric-button[data-numeric='0'] {
+	width: 195px;
+	border-radius: 40px;
+}
